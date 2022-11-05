@@ -65,8 +65,6 @@ class Navigator
         {
             button.classList.remove("navSelected");
             button.disabled = false;
-            // button.style.pointerEvents = "auto";
-            // button.style.color = "grey";
         });
 
         this.activeButton.disabled = true;
