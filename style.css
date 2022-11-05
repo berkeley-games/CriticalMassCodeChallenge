@@ -1,0 +1,100 @@
+body
+{
+    width:100%; 
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+#navContainer
+{
+    position: relative;
+    padding-top:10px;
+    display:flex; 
+    flex-direction: row;
+    min-width: 800px;
+
+    width: 95%;
+    height: auto;
+    margin:auto;
+    background-color: transparent;
+    
+    border-bottom: 1.5px solid lightgrey;
+}
+
+.buttonContainer
+{
+    flex-grow: 1;
+    padding: 8px; 
+    margin: auto;
+    width:auto;
+    height:auto;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.navigationButton
+{
+    user-select: none;
+    -webkit-user-select: none;
+
+    color:grey;
+    font-size: large;
+    text-align: center;
+
+    border: none;
+    background-color: transparent;
+}
+
+.navigationButton:hover 
+{
+    cursor: pointer;
+    color:#156cdf;
+}
+
+.navigationButton:active 
+{
+    cursor:pointer;
+    color:black;
+}
+
+.navigationButton:focus 
+{
+    cursor:auto;
+    color:black;
+    pointer-events: "none";
+}
+
+.navigationButton:disabled 
+{
+    cursor:auto;
+    color:black;
+    pointer-events: "none";
+}
+
+.navSelected
+{
+    color:black;
+    pointer-events: "none";
+}
+
+#navigationLine
+{
+    position: absolute;
+    bottom: -1.5px;
+    color:black;
+    background-color: black;
+    width: 0px;
+    height: 1px;
+    transition: 350ms;
+}
+
+#time
+{
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    font-family: "Arial";
+    transition: 350ms;
+    top:75px;
+}
