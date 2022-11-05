@@ -59,14 +59,13 @@ class Navigator
         // flag used to determine whether we should animate the time & underline
         let firstSelection = typeof this.activeButton === "undefined";
 
-        this.activeButton = selectedButton;
-
-        this.buttons.forEach(button => 
+        if(!firstSelection)
         {
-            button.classList.remove("navSelected");
-            button.disabled = false;
-        });
-
+            this.activeButton.classList.remove("navSelected");
+            this.activeButton.disabled = false;
+        }
+        
+        this.activeButton = selectedButton;
         this.activeButton.disabled = true;
         this.activeButton.classList.add("navSelected");
 
